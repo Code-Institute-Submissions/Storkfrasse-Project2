@@ -11,31 +11,42 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Rock, Paper Scissors</h1>
-    <!--Buttons for the game-->
-    <div class="game">
-        <div class="choices">
-            <button class="choice" data-choice="rock">Rock</button>
-            <button class="choice" data-choice="paper">Paper</button>
-            <button class="choice" data-choice="scissors">Scissors</button>
-            
-        </div>
-        <!--Button for the rules-->
-        <button class="rules-button">Rules</button>
-        <div id="rules-popup" class="popup">
-            <div class="popup-content">
-                <!-- add a close button (x) to close the pop-up-->
-                <span class="close-button" id="close-rules">&times;</span>
-                <h2>Rules of the Game!</h2>
-                <p>Rock, paper, scissors is a simple game.<br> Rock beats scissors. Scissors beat paper. And paper beats rock.<br> easy as that. Good Luck!</p>
-            </div>
-        </div>
-        <div class="result">
-            <p>Your Choice: <span id="player-choice"></span></p>
-            <p>Computer Choice: <span id="computer-choice"></span></p>
-            <p id ="result-text"></p>
+    <header class="header font-style-header">
+       <h1>Rock, Paper, Scissors</h1>
+    <!--Button for the rules-->
+    <button class="rules-button">Rules</button>
+    <div id="rules-popup" class="popup">
+        <div class="popup-content">
+            <!-- add a close button (x) to close the pop-up-->
+            <span class="close-button" id="close-rules">&times;</span>
+            <h2>Rules of the Game!</h2>
+            <p>Rock, paper, scissors is a simple game.<br> Rock beats scissors. Scissors beat paper. And paper beats
+                rock.<br> easy as that. Good Luck!</p>
         </div>
     </div>
+
+    </header>
+    <main>
+        <section>
+            <!--Buttons for the game-->
+            <div class="game">
+                <div class="choices">
+                    <img class="choice" data-choice="rock" src="assets/image/Rock.jpg" alt="Rock">
+                    <img class="choice" data-choice="paper" src="assets/image/Paper.jpg" alt="Paper">
+                    <img class="choice" data-choice="scissors" src="assets/image/Scissors.jpg" alt="Scissors">
+            
+                </div>
+                
+            
+                <div class="result">
+                    <p>Your Choice: <span id="player-choice"></span></p>
+                    <p>Computer Choice: <span id="computer-choice"></span></p>
+                    <p id="result-text"></p>
+                </div>
+            </div>
+        </section>
+   
+    </main>
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>

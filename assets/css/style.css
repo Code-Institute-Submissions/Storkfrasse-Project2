@@ -1,3 +1,26 @@
+/* Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lilita+One&display=swap');
+
+/*Shadow and header font*/
+.header {
+    font-family: 'Lilita One', cursive;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2)
+}
+
+/*Font and placement for rules button*/
+.rules-button {
+    font-family: 'Hachi Maru Pop', sans-serif ;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Rock, Paper, Scissors image*/
+.choices img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
