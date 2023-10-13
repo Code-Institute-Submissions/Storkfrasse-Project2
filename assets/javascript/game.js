@@ -3,6 +3,7 @@ const playerChoiceDisplay = document.getElementById("player-choice");
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const resultText = document.getElementById("result-text");
 const comment = document.getElementById("comment"); // Added comment element
+const resetButton = document.getElementById("reset-button");
 let playerWins = 0;
 let computerWins = 0;
 
@@ -49,6 +50,8 @@ function determineWinner(player, computer) {
     resultText.textContent += ` (Player: ${playerWins} | Computer: ${computerWins})`;
 }
 
+
+
 // Get reference to the HTML elements
 const rulesButton = document.querySelector(".rules-button"); // Use .querySelector to select by class
 const rulesPopup = document.getElementById("rules-popup");
@@ -62,4 +65,18 @@ rulesButton.addEventListener("click", () => {
 // Add an event listener to close the rules pop-up
 closeRulesButton.addEventListener("click", () => {
     rulesPopup.style.display = "none";
+});
+
+// Add an event listener to reset the game
+resetButton.addEventListener("click", () => {
+    // Reset player and computer win counters
+    playerWins = 0;
+    computerWins = 0;
+
+    // Reset the result text
+    resultText.textContent = "(Player: 0 | Computer: 0)";
+
+    // Reset player and computer choices
+    playerChoiceDisplay.textContent = "";
+    computerChoiceDisplay.textContent = "";
 });
