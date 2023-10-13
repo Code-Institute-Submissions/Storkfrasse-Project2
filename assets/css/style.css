@@ -2,9 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lilita+One&display=swap');
 
 /*Shadow and header font*/
-.header {
-    font-family: 'Lilita One', cursive;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2)
+.header-container {
+    display: flex;
+    justify-content: center;
+    
+   
+}
+/* Header styles*/
+.header-narrow {
+    width: 60%;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #b4b4b8;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+/*Nav style*/
+nav {
+    font-family: 'Hachi Maru Pop', sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+/*The buttons and links allways is black*/
+.rules-button:visited {
+    color: black;
 }
 
 /*Font and placement for rules button*/
@@ -19,6 +47,33 @@
     width: 100px;
     height: 100px;
     cursor: pointer;
+}
+/*Keeps the box white*/
+.section-container {
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
+    margin: 20px; 
+}
+
+/*Choice box style*/
+.choice-box {
+    width: 60%;
+    background-color: #b4b4b8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px; 
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 body {
@@ -45,7 +100,12 @@ body {
 }
 
 .result {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    
 }
 
 .result p {

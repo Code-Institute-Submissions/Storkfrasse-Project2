@@ -3,6 +3,8 @@ const playerChoiceDisplay = document.getElementById("player-choice");
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const resultText = document.getElementById("result-text");
 const comment = document.getElementById("comment"); // Added comment element
+let playerWins = 0;
+let computerWins = 0;
 
 // Add a click event listener to each choice button
 choices.forEach((choice) => {
@@ -11,14 +13,9 @@ choices.forEach((choice) => {
         playerChoiceDisplay.textContent = playerChoice;
         const computerChoice = getComputerChoice();
         computerChoiceDisplay.textContent = computerChoice;
-        const result = determineWinner(playerChoice, computerChoice);
-        resultText.textContent = result;
-
-        
-
+        determineWinner(playerChoice, computerChoice); // Determine the winner
         console.log("Player choice: " + playerChoice);
         console.log("Computer choice: " + computerChoice);
-        console.log("Result: " + result);
     });
 });
 
@@ -33,19 +30,23 @@ function getComputerChoice() {
 function determineWinner(player, computer) {
     if (player === computer) {
         console.log("It's a tie!");
-        return "It's a tie!";
-    }
-    if (
+        resultText.textContent = "It's a tie!";
+    } else if (
         (player === "rock" && computer === "scissors") ||
         (player === "paper" && computer === "rock") ||
         (player === "scissors" && computer === "paper")
     ) {
         console.log("You Win!");
-        return "You Win!";
+        resultText.textContent = "You Win!";
+        playerWins++; // Increment player's win counter
     } else {
         console.log("Computer Win!");
-        return "Computer Win";
+        resultText.textContent = "Computer Win";
+        computerWins++; // Increment computer's win counter
     }
+
+    // Update the win counters in the result text
+    resultText.textContent += ` (Player: ${playerWins} | Computer: ${computerWins})`;
 }
 
 // Get reference to the HTML elements
@@ -62,8 +63,3 @@ rulesButton.addEventListener("click", () => {
 closeRulesButton.addEventListener("click", () => {
     rulesPopup.style.display = "none";
 });
-
-
-
-
-

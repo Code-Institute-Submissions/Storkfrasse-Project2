@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="header font-style-header">
+    <div class="header-container">
+    <header class="header-narrow font-style-header">
        <h1>Rock, Paper, Scissors</h1>
-    <!--Button for the rules-->
-    <button class="rules-button">Rules</button>
+       
+       <nav>
+        <a href="#" class="rules-button"><i class="fa-solid fa-circle-info"></i>Rules</a>
+       </nav>
+    
+        
     <div id="rules-popup" class="popup">
         <div class="popup-content">
             <!-- add a close button (x) to close the pop-up-->
@@ -23,30 +28,38 @@
             <p>Rock, paper, scissors is a simple game.<br> Rock beats scissors. Scissors beat paper. And paper beats
                 rock.<br> easy as that. Good Luck!</p>
         </div>
+        
     </div>
 
     </header>
-    <main>
-        <section>
+    </div>
+    <main class="main-box"> 
+        <section class="section-container">
             <!--Buttons for the game-->
             <div class="game">
                 <div class="choices">
                     <img class="choice" data-choice="rock" src="assets/image/Rock.jpg" alt="Rock">
                     <img class="choice" data-choice="paper" src="assets/image/Paper.jpg" alt="Paper">
                     <img class="choice" data-choice="scissors" src="assets/image/Scissors.jpg" alt="Scissors">
-            
                 </div>
                 
             
-                <div class="result">
-                    <p>Your Choice: <span id="player-choice"></span></p>
-                    <p>Computer Choice: <span id="computer-choice"></span></p>
-                    <p id="result-text"></p>
-                </div>
+                
             </div>
         </section>
+        <div class="result">
+            <div class="choice-box">
+                <p>Your Choice: <span id="player-choice"></span></p>
+                <p>Computer Choice: <span id="computer-choice"></span></p>
+                <p id="result-text"></p>
+            </div>
+        </div>
    
     </main>
+    <!---Javascript-->
     <script src="assets/javascript/game.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 </html>
