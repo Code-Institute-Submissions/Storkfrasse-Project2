@@ -166,3 +166,40 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+
+/*Media for diffrent screens*/
+
+@media (max-width: 768px) {
+    .header-narrow {
+        width: 90%; /* Adjust the width for smaller screens */
+        justify-content: center;
+    }
+
+    .section-container {
+        width: 90%; /* Adjust the width for smaller screens */
+        justify-content: center;
+    }
+
+    .choices img {
+        width: 50px; /* Adjust image size for smaller screens */
+        height: 50px;
+    }
+
+    .choices {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-narrow {
+        width: 79%; /* Adjust the width for tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-narrow {
+        width: 60%; /* Adjust the width for bigger screens */
+    }
+}
