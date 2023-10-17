@@ -54,7 +54,7 @@ Rock paper scissors is single page website, with an pop-up box for rules
 - ### Color Scheme
 
       I used Antique white and whit mainly so the users eye won't work to hard. the Celestial Blue is for future features.
- ![Color scheme](assets/readme-image/Rock%2Cpaper%2Cscissors.png)
+ ![Color scheme](assets/readme-image/colorschemes.png)
 
 [Back to top](<#contents>)
 
