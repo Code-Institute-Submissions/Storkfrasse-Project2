@@ -1,5 +1,7 @@
 # **Rock Paper Scissors**
 
+![Rock Paper Scissors](assets/readme-image/screen.png)
+
 Rock, Paper, Scissors. Is a simple game there you meet a computer.
 
 Welcome to <a href="https://storkfrasse.github.io/Project2/" target="_blank" rel="noopener">Rock, Paper, Scissors</a>
