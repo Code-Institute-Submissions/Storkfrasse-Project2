@@ -11,6 +11,8 @@ Welcome to <a href="https://storkfrasse.github.io/Project2/" target="_blank" rel
 - [**Rock, Paper, Scissors**](#Rock Paper Scissors)
 - [Contents](#contents)
 - [User Experience](#user-experience)
+  - [Wireframe](#wireframe)
+  - [Goals](#goals)
   - [User Stories](#user-stories)
   - [Site Structure](#site-structure)
   - [Design Choices](#design-choices)
@@ -30,12 +32,36 @@ Welcome to <a href="https://storkfrasse.github.io/Project2/" target="_blank" rel
 
 # User Experience
 
-## User Stories
+## Wireframe
 
-- As a user I want to be able to read the rules.
-- As a user I want to play the game.
-- As a user I want to know won the round.
-- As a user I want to see and reset the score.
+- Desktop wireframe
+  
+  ![Desktop wireframe](assets/readme-image/Wireframdesktop.png)
+
+- Phone Wireframe
+  
+  ![Phone wireframe](assets/readme-image/wireframephone.png)
+
+# Goals
+## Visitor Goals
+ - People who wan't to play som game.
+ - People who nees to do somthing meanwhile they waiting for somthing.
+ - For people who has nothing better to do.
+
+## What visitor gets
+ - A easy game to play.
+ - A way to find the rules.
+ - A way to see the score.
+ - A way to see who get 10 wins first.
+ - A way that they need to reset the game.
+ - A way tho show who wins and the game needs a reset to continue.
+
+## User Stories
+1. As a user I want to be able to read the rules.
+0. As a user I want to play the game.
+0. As a user I want to know won the round.
+0. As a user I want to see and reset the score.
+0. As a user i want to have fun.
 
 [Back to top](<#contents>)
 
@@ -85,6 +111,7 @@ Rock paper scissors is single page website, with an pop-up box for rules
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
 - [Github](https://github.com/) - used to host my website.
 - [Codeanywhere](https://app.codeanywhere.com) - used to build and edit my website.
+- [Paint](https://en.wikipedia.org/wiki/Microsoft_Paint) - Paint for the wireframes.
 
 [Back to top](<#contents>)
 
