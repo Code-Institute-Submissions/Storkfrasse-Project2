@@ -65,8 +65,8 @@ There were minor spelling and grammar errors that have since been fixed.
 
 ### Lighthouse Test
 
-* The Lighthouse test shows 90 out of 100.
+* The Lighthouse Accessibility show 100.
 
-![Lighthouse test result](assets/testing-image/Lighthouseok.png)
+![Lighthouse test result](assets/testing-image/lighthousegreen.png)
 
 Back to [README.md](./README.md#testing).
