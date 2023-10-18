@@ -6,10 +6,16 @@ const comment = document.getElementById("comment"); // Added comment element
 const resetButton = document.getElementById("reset-button");
 let playerWins = 0;
 let computerWins = 0;
+let winsToAchive = 10;
+let gameActive = true; // Flag to track whether the game is still active
 
 // Add a click event listener to each choice button
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
+        if (!gameActive) {
+            return; // Exit the function if the game is no loger active
+        }
+
         const playerChoice = choice.getAttribute("data-choice");
         playerChoiceDisplay.textContent = playerChoice;
         const computerChoice = getComputerChoice();
@@ -17,6 +23,10 @@ choices.forEach((choice) => {
         determineWinner(playerChoice, computerChoice); // Determine the winner
         console.log("Player choice: " + playerChoice);
         console.log("Computer choice: " + computerChoice);
+        if (playerWins === winsToAchive | computerWins === winsToAchive) {
+            gameActive = false // Game is over; set flag to false
+            resultText.textContent = "Game is over pleace reset!";
+        }
     });
 });
 
@@ -77,6 +87,16 @@ resetButton.addEventListener("click", () => {
     resultText.textContent = "(Player: 0 | Computer: 0)";
 
     // Reset player and computer choices
+    playerChoiceDisplay.textContent = "";
+    computerChoiceDisplay.textContent = "";
+});
+
+// Add an event listener to reset the game
+resetButton.addEventListener("click", () => {
+    gameActive = true; // Reactivate the game when resetting
+    playerWins = 0;
+    computerWins = 0;
+    resultText.textContent = "(Player: 0 | Computer: 0)";
     playerChoiceDisplay.textContent = "";
     computerChoiceDisplay.textContent = "";
 });

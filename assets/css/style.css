@@ -87,7 +87,7 @@ nav {
     font-weight: bold;
 }
 
-/*Making the background image more seetrough*/
+/*Making the background image more see through*/
 
 body:before {
     content: "";
