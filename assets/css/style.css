@@ -41,6 +41,7 @@ nav {
     font-family: 'Hachi Maru Pop', sans-serif ;
     font-weight: bold;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 /*Rock, Paper, Scissors image*/
@@ -159,6 +160,12 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     text-align: center;
+    transition: background-color 1s ease;
+}
+
+.popup-active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup-content {

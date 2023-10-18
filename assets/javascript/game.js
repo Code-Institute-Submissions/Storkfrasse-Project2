@@ -23,9 +23,15 @@ choices.forEach((choice) => {
         determineWinner(playerChoice, computerChoice); // Determine the winner
         console.log("Player choice: " + playerChoice);
         console.log("Computer choice: " + computerChoice);
-        if (playerWins === winsToAchive | computerWins === winsToAchive) {
+        if (playerWins === winsToAchive || computerWins === winsToAchive) {
             gameActive = false // Game is over; set flag to false
-            resultText.textContent = "Game is over pleace reset!";
+
+            if (playerWins === winsToAchive) {
+                resultText.textContent = "Player wins! pleace reset!";
+            } else {
+                resultText.textContent = "Computer wins! pleace reset!";
+            }
+            
         }
     });
 });
@@ -93,7 +99,7 @@ resetButton.addEventListener("click", () => {
 
 // Add an event listener to reset the game
 resetButton.addEventListener("click", () => {
-    gameActive = true; // Reactivate the game when resetting
+    gameActive = true; // Reactivate the game
     playerWins = 0;
     computerWins = 0;
     resultText.textContent = "(Player: 0 | Computer: 0)";
