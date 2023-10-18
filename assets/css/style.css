@@ -193,6 +193,15 @@ h3 {
     /*Hide the heading*/
 }
 
+/*Add font to h2*/
+h2 {
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+/*Add font to p*/
+p {
+    font-family: 'Hachi Maru Pop', sans-serif;
+}
+
 /*Media for diffrent screens*/
 
 @media (max-width: 768px) {
