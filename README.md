@@ -166,7 +166,7 @@ The method from cloning a project from GitHub is below:
 - The font came from [Google Fonts](https://fonts.google.com/).
 - The icons came from [Font Awesome](https://fontawesome.com/).
 - The text in the home pages is from [Google](https://google.com).
-- Color scheme [Cssgradient.io](https://cssgradient.io).
+- Color scheme [Coolors](https://coolors.co/).
 
 ### Media
 
