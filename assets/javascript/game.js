@@ -45,25 +45,30 @@ function getComputerChoice() {
 
 // Function to determine the winner
 function determineWinner(player, computer) {
-    if (player === computer) {
-        console.log("It's a tie!");
-        resultText.textContent = "It's a tie!";
-    } else if (
-        (player === "rock" && computer === "scissors") ||
-        (player === "paper" && computer === "rock") ||
-        (player === "scissors" && computer === "paper")
-    ) {
-        console.log("You Win!");
-        resultText.textContent = "You Win!";
-        playerWins++; // Increment player's win counter
-    } else {
-        console.log("Computer Win!");
-        resultText.textContent = "Computer Win";
-        computerWins++; // Increment computer's win counter
-    }
+    try {
+        if (player === computer) {
+            console.log("It's a tie!");
+            resultText.textContent = "It's a tie!";
+        } else if (
+           (player === "rock" && computer === "scissors") ||
+           (player === "paper" && computer === "rock") ||
+           (player === "scissors" && computer === "paper")
+        ) {
+           console.log("You Win!");
+           resultText.textContent = "You Win!";
+           playerWins++; // Increment player's win counter
+        } else {
+           console.log("Computer Win!");
+           resultText.textContent = "Computer Win";
+           computerWins++; // Increment computer's win counter
+        }
 
-    // Update the win counters in the result text
-    resultText.textContent += ` (Player: ${playerWins} | Computer: ${computerWins})`;
+          // Update the win counters in the result text
+           resultText.textContent += ` (Player: ${playerWins} | Computer: ${computerWins})`;
+    } catch (error) {
+        console.error("An error occurred in determineWinner:", error);
+        // Handle the error here, if necessary
+    }
 }
 
 
