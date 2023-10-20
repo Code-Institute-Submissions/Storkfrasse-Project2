@@ -54,7 +54,7 @@ Google Chrome, Microsoft Edge and Mozilla Firefox. Appearance, functionality and
 
   * During validation one bug became known during the validation stage, a brief description is below:
 
-  * Contact page -
+  * Index page -
     ![W3C Validator test result](assets/testing-image/missingheading.png)
 This Warning that i did't have a heading, i sorted that out by adding a h3 and made it not to show.
 
