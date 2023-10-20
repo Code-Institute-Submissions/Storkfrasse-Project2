@@ -2,7 +2,6 @@ const choices = document.querySelectorAll(".choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const resultText = document.getElementById("result-text");
-const comment = document.getElementById("comment"); // Added comment element
 const resetButton = document.getElementById("reset-button");
 let playerWins = 0;
 let computerWins = 0;
