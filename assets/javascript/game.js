@@ -20,8 +20,6 @@ choices.forEach((choice) => {
         const computerChoice = getComputerChoice();
         computerChoiceDisplay.textContent = computerChoice;
         determineWinner(playerChoice, computerChoice); // Determine the winner
-        console.log("Player choice: " + playerChoice);
-        console.log("Computer choice: " + computerChoice);
         if (playerWins === winsToAchive || computerWins === winsToAchive) {
             gameActive = false // Game is over; set flag to false
 
@@ -46,18 +44,15 @@ function getComputerChoice() {
 function determineWinner(player, computer) {
     try {
         if (player === computer) {
-            console.log("It's a tie!");
             resultText.textContent = "It's a tie!";
         } else if (
            (player === "rock" && computer === "scissors") ||
            (player === "paper" && computer === "rock") ||
            (player === "scissors" && computer === "paper")
         ) {
-           console.log("You Win!");
            resultText.textContent = "You Win!";
            playerWins++; // Increment player's win counter
         } else {
-           console.log("Computer Win!");
            resultText.textContent = "Computer Win";
            computerWins++; // Increment computer's win counter
         }
