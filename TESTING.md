@@ -69,4 +69,17 @@ There were minor spelling and grammar errors that have since been fixed.
 
 ![Lighthouse test result](assets/testing-image/lighthousegreen.png)
 
+
+### Console.log Test
+
+* I hade console.log when testing the functions
+
+![Console test result](assets/testing-image/consolelog.png)
+
+### Wave Test
+
+* The [Wave](https://wave.webaim.org/report#/https://storkfrasse.github.io/Project2/) Test result
+
+![Wave test result](assets/testing-image/wavetest.png)
+
 Back to [README.md](./README.md#testing).
